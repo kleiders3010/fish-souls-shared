@@ -14,7 +14,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	if !Engine.is_editor_hint():
-		$"../Target".global_position = get_viewport().get_mouse_position()
+		$"../../Target".global_position = get_viewport().get_mouse_position()
 	
 	current_turn_speed = TURN_SPEED * remap(current_speed, 0, speed, 0, 1)
 	var previous_segment : Node2D = null
@@ -24,10 +24,11 @@ func _physics_process(delta: float) -> void:
 			continue
 		
 		if previous_segment == null:
-			var target_angle = ($"../Target".global_position - segment.global_position).angle()
+			var target_angle = ($"../../Target".global_position - segment.global_position).angle()
 			var current_angle = segment.rotation
 			var new_angle = lerp_angle(current_angle, target_angle, current_turn_speed * delta)
-			if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) or (Engine.is_editor_hint() and segment.global_position.distance_to($"../Target".global_position) > 100):
+			#if :
+			if (Engine.is_editor_hint() and segment.global_position.distance_to($"../../Target".global_position) > 100) or (!Engine.is_editor_hint() and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT)):
 				current_speed = move_toward(current_speed, speed, (speed * 0.5) * delta)
 				segment.recently_rotated = new_angle - current_angle
 				segment.rotate(segment.recently_rotated)
