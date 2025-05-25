@@ -79,13 +79,13 @@ scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(1, -0.00020027, 0.00020027, 1, -0.00741172, -35.0002)
 
 [node name="Bone3" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4"]
-position = Vector2(-5.64526, -34.5417)
+position = Vector2(-5.64526, -34.5418)
 rotation = -0.162003
-scale = Vector2(1, 1)
+scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(1, -0.000300405, 0.000300405, 1, -0.0104024, -35.0002)
 
 [node name="Bone2" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3"]
-position = Vector2(-8.1817, -39.1544)
+position = Vector2(-8.18164, -39.1544)
 rotation = -0.205994
 scale = Vector2(1, 1)
 rest = Transform2D(1, -0.000799214, 0.000799214, 1, -0.0307144, -40.0002)
@@ -93,23 +93,23 @@ rest = Transform2D(1, -0.000799214, 0.000799214, 1, -0.0307144, -40.0002)
 [node name="Bone1" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2"]
 position = Vector2(-8.55798, -49.2623)
 rotation = -0.172005
-scale = Vector2(1, 1)
+scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(0.999999, -0.00170043, 0.00170043, 0.999999, -0.087007, -49.9999)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1"]
-position = Vector2(-5.65497, -54.7086)
+position = Vector2(-5.65503, -54.7087)
 rotation = -0.102997
-scale = Vector2(0.999999, 0.999999)
+scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(0.999992, -0.00409979, 0.00409979, 0.999992, -0.225713, -54.9989)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0"]
-position = Vector2(-2.09955, -49.9561)
+position = Vector2(-2.09961, -49.9563)
 rotation = -0.0419998
 rest = Transform2D(0.999961, -0.00880044, 0.00880044, 0.999961, -0.438503, -49.9987)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0/Bone0"]
-position = Vector2(-0.264343, -29.9989)
-rotation = -0.00881437
+position = Vector2(-0.26416, -29.999)
+rotation = -0.00881438
 scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(0.999875, -0.0158138, 0.0158138, 0.999875, -0.474254, -29.9958)
 auto_calculate_length_and_angle = false
@@ -216,268 +216,3 @@ rotation = 110.81
 script = ExtResource("3_jhsbd")
 radius = 45
 owned_bone = NodePath("../../Skeleton/Bone9")
-
-[node name="ProcedureJail" type="Node" parent="."]
-process_mode = 4
-
-[node name="InvertedAttempt" type="Node2D" parent="."]
-process_mode = 4
-visible = false
-
-[node name="Fish" type="Node2D" parent="InvertedAttempt"]
-visible = false
-
-[node name="Polygon2D" type="Polygon2D" parent="InvertedAttempt/Fish"]
-position = Vector2(-123, -72)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("2_at62a")
-skeleton = NodePath("../Skeleton")
-polygon = PackedVector2Array(345.049, 2144.42, 404.917, 2157.25, 484.029, 2148.7, 558.865, 2112.35, 605.904, 2058.9, 625.147, 1977.65, 610.18, 1892.12, 582.384, 1821.56, 571.693, 1725.34, 603.766, 1646.23, 629.424, 1569.26, 652.943, 1483.73, 663.628, 1396.06, 685.01, 1291.29, 693.562, 1222.87, 695.701, 1137.35, 697.839, 1064.65, 712.806, 996.229, 725.635, 932.084, 759.845, 887.183, 819.714, 893.598, 894.549, 872.216, 950.141, 827.315, 954.418, 769.584, 928.76, 722.545, 886.002, 643.438, 815.442, 585.708, 761.988, 553.635, 740.607, 487.353, 723.502, 393.274, 714.949, 318.438, 708.534, 264.984, 689.291, 194.425, 633.699, 126.004, 601.631, 25.5132, 541.763, -17.25, 447.684, -21.5263, 368.572, 23.375, 323.671, 106.763, 283.046, 194.428, 250.973, 290.645, 231.73, 399.691, 218.901, 491.632, 195.381, 570.744, 126.96, 634.888, 73.5101, 728.964, 64.9575, 805.937, 94.8917, 863.667, 163.313, 870.082, 246.701, 893.602, 265.944, 957.746, 265.944, 1045.41, 283.05, 1143.77, 304.431, 1235.71, 319.398, 1323.37, 347.194, 1411.04, 377.129, 1528.64, 409.201, 1635.54, 422.03, 1727.49, 443.412, 1819.43, 430.583, 1889.99, 400.648, 1969.1, 374.99, 2050.35)
-uv = PackedVector2Array(345.049, 2144.42, 404.917, 2157.25, 484.029, 2148.7, 558.865, 2112.35, 605.904, 2058.9, 625.147, 1977.65, 610.18, 1892.12, 582.384, 1821.56, 571.693, 1725.34, 603.766, 1646.23, 629.424, 1569.26, 652.943, 1483.73, 663.628, 1396.06, 685.01, 1291.29, 693.562, 1222.87, 695.701, 1137.35, 697.839, 1064.65, 712.806, 996.229, 725.635, 932.084, 759.845, 887.183, 819.714, 893.598, 894.549, 872.216, 950.141, 827.315, 954.418, 769.584, 928.76, 722.545, 886.002, 643.438, 815.442, 585.708, 761.988, 553.635, 740.607, 487.353, 723.502, 393.274, 714.949, 318.438, 708.534, 264.984, 689.291, 194.425, 633.699, 126.004, 601.631, 25.5132, 541.763, -17.25, 447.684, -21.5263, 368.572, 23.375, 323.671, 106.763, 283.046, 194.428, 250.973, 290.645, 231.73, 399.691, 218.901, 491.632, 195.381, 570.744, 126.96, 634.888, 73.5101, 728.964, 64.9575, 805.937, 94.8917, 863.667, 163.313, 870.082, 246.701, 893.602, 265.944, 957.746, 265.944, 1045.41, 283.05, 1143.77, 304.431, 1235.71, 319.398, 1323.37, 347.194, 1411.04, 377.129, 1528.64, 409.201, 1635.54, 422.03, 1727.49, 443.412, 1819.43, 430.583, 1889.99, 400.648, 1969.1, 374.99, 2050.35)
-bones = ["Bone8", PackedFloat32Array(0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.31, 0.31, 0.31, 0.31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.31, 0.31, 0.31, 0.31, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81, 0.81), "Bone8/Bone7", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0.26, 0.26, 0.26, 0.76, 0.76, 0.76, 0.76, 0.63, 0.63, 0.37, 0.37, 0.37, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.37, 0.37, 0.63, 0.63, 1, 0.76, 0.76, 0.26, 0.26, 0.26, 0.26, 0, 0, 0), "Bone8/Bone7/Bone6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0.37, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0.37, 0, 0, 0, 0, 0, 0), "Bone8/Bone7/Bone6/Bone5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.7, 0.7, 0.7, 0.7, 0.37, 0.37, 0.37, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone8/Bone7/Bone6/Bone5/Bone4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.37, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.37, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone8/Bone7/Bone6/Bone5/Bone4/Bone3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.37, 0.37, 0.37, 0.37, 0.7, 0.7, 0.7, 0.7, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0, 0, 0, 0, 0.37, 0.37, 0.7, 0.7, 0.7, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.37, 0.37, 0.37, 0.37, 0.37, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.37, 0.37, 0.37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
-
-[node name="Example" type="Polygon2D" parent="InvertedAttempt/Fish"]
-position = Vector2(573, 278)
-rotation = 3.14159
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("2_at62a")
-polygon = PackedVector2Array(345.049, 2144.42, 404.917, 2157.25, 484.029, 2148.7, 558.865, 2112.35, 605.904, 2058.9, 625.147, 1977.65, 610.18, 1892.12, 582.384, 1821.56, 571.693, 1725.34, 603.766, 1646.23, 629.424, 1569.26, 652.943, 1483.73, 663.628, 1396.06, 685.01, 1291.29, 693.562, 1222.87, 695.701, 1137.35, 697.839, 1064.65, 712.806, 996.229, 725.635, 932.084, 759.845, 887.183, 819.714, 893.598, 894.549, 872.216, 950.141, 827.315, 954.418, 769.584, 928.76, 722.545, 886.002, 643.438, 815.442, 585.708, 761.988, 553.635, 740.607, 487.353, 723.502, 393.274, 714.949, 318.438, 708.534, 264.984, 689.291, 194.425, 633.699, 126.004, 601.631, 25.5132, 541.763, -17.25, 447.684, -21.5263, 368.572, 23.375, 323.671, 106.763, 283.046, 194.428, 250.973, 290.645, 231.73, 399.691, 218.901, 491.632, 195.381, 570.744, 126.96, 634.888, 73.5101, 728.964, 64.9575, 805.937, 94.8917, 863.667, 163.313, 870.082, 246.701, 893.602, 265.944, 957.746, 265.944, 1045.41, 283.05, 1143.77, 304.431, 1235.71, 319.398, 1323.37, 347.194, 1411.04, 377.129, 1528.64, 409.201, 1635.54, 422.03, 1727.49, 443.412, 1819.43, 430.583, 1889.99, 400.648, 1969.1, 374.99, 2050.35)
-uv = PackedVector2Array(345.049, 2144.42, 404.917, 2157.25, 484.029, 2148.7, 558.865, 2112.35, 605.904, 2058.9, 625.147, 1977.65, 610.18, 1892.12, 582.384, 1821.56, 571.693, 1725.34, 603.766, 1646.23, 629.424, 1569.26, 652.943, 1483.73, 663.628, 1396.06, 685.01, 1291.29, 693.562, 1222.87, 695.701, 1137.35, 697.839, 1064.65, 712.806, 996.229, 725.635, 932.084, 759.845, 887.183, 819.714, 893.598, 894.549, 872.216, 950.141, 827.315, 954.418, 769.584, 928.76, 722.545, 886.002, 643.438, 815.442, 585.708, 761.988, 553.635, 740.607, 487.353, 723.502, 393.274, 714.949, 318.438, 708.534, 264.984, 689.291, 194.425, 633.699, 126.004, 601.631, 25.5132, 541.763, -17.25, 447.684, -21.5263, 368.572, 23.375, 323.671, 106.763, 283.046, 194.428, 250.973, 290.645, 231.73, 399.691, 218.901, 491.632, 195.381, 570.744, 126.96, 634.888, 73.5101, 728.964, 64.9575, 805.937, 94.8917, 863.667, 163.313, 870.082, 246.701, 893.602, 265.944, 957.746, 265.944, 1045.41, 283.05, 1143.77, 304.431, 1235.71, 319.398, 1323.37, 347.194, 1411.04, 377.129, 1528.64, 409.201, 1635.54, 422.03, 1727.49, 443.412, 1819.43, 430.583, 1889.99, 400.648, 1969.1, 374.99, 2050.35)
-bones = ["Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.43, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0.3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.15, 0.3, 0.58, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.57, 0.57, 0.57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.57, 0.57, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PackedFloat32Array(0.57, 0.57, 0.57, 0.57, 0.57, 0.57, 0.57, 0.57, 0.57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.57, 0.57, 0.57, 0.57, 0.57)]
-
-[node name="Skeleton" type="Skeleton2D" parent="InvertedAttempt/Fish"]
-z_index = 3
-
-[node name="Bone8" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton"]
-position = Vector2(2.00125, 344)
-rotation = -1.5708
-rest = Transform2D(-3.61999e-06, -1, 1, -3.61999e-06, 2.00125, 344)
-auto_calculate_length_and_angle = false
-length = 30.0
-bone_angle = 0.0
-
-[node name="Bone7" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8"]
-position = Vector2(50, 0)
-rest = Transform2D(1, 0, 0, 1, 50, 0)
-
-[node name="Bone6" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8/Bone7"]
-position = Vector2(54, 0)
-rest = Transform2D(1, 0, 0, 1, 54, 0)
-
-[node name="Bone5" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8/Bone7/Bone6"]
-position = Vector2(50, 0)
-rest = Transform2D(1, 0, 0, 1, 50, 0)
-
-[node name="Bone4" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8/Bone7/Bone6/Bone5"]
-position = Vector2(41, -1.19209e-07)
-rest = Transform2D(1, 0, 0, 1, 41, -1.19209e-07)
-
-[node name="Bone3" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4"]
-position = Vector2(35, -2)
-rest = Transform2D(1, 0, 0, 1, 35, -2)
-
-[node name="Bone2" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3"]
-position = Vector2(35, -2.36614e-08)
-rest = Transform2D(1, 0, 0, 1, 35, -2.36614e-08)
-
-[node name="Bone1" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2"]
-position = Vector2(34, 0)
-rest = Transform2D(1, 0, 0, 1, 34, 0)
-
-[node name="Bone0" type="Bone2D" parent="InvertedAttempt/Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1"]
-position = Vector2(45, 0)
-rotation = -3.12781
-rest = Transform2D(-0.999905, -0.0137784, 0.0137784, -0.999905, 45, 0)
-
-[node name="FishContainer" type="Node2D" parent="InvertedAttempt"]
-visible = false
-script = ExtResource("2_kjgfh")
-
-[node name="Segment0" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(-15.4167, -173.637)
-rotation = 11.4085
-script = ExtResource("3_jhsbd")
-radius = 30
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0")
-
-[node name="Segment1" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(-27.4558, -146.159)
-rotation = 11.1168
-script = ExtResource("3_jhsbd")
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1")
-
-[node name="Segment2" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(-33.5017, -96.5256)
-rotation = 10.8403
-script = ExtResource("3_jhsbd")
-radius = 55
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2")
-
-[node name="Segment3" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(-24.9946, -42.1875)
-rotation = 10.4018
-script = ExtResource("3_jhsbd")
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3")
-
-[node name="Segment4" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(2.98462, -0.748768)
-rotation = 9.80932
-script = ExtResource("3_jhsbd")
-radius = 40
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7/Bone6/Bone5/Bone4")
-
-[node name="Segment5" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(40.0672, 14.2473)
-rotation = 9.17483
-script = ExtResource("3_jhsbd")
-radius = 35
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7/Bone6/Bone5")
-
-[node name="Segment6" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(73.9762, 5.57673)
-rotation = 8.6068
-script = ExtResource("3_jhsbd")
-radius = 35
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7/Bone6")
-
-[node name="Segment7" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(97.8987, -19.9716)
-rotation = 8.13005
-script = ExtResource("3_jhsbd")
-radius = 35
-owned_bone = NodePath("../../Fish/Skeleton/Bone8/Bone7")
-
-[node name="Segment9" type="Sprite2D" parent="InvertedAttempt/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(107.446, -53.6442)
-rotation = 7.71388
-script = ExtResource("3_jhsbd")
-radius = 45
-owned_bone = NodePath("../../Fish/Skeleton/Bone8")
-
-[node name="Fish2" type="Node2D" parent="InvertedAttempt"]
-
-[node name="Polygon2D" type="Polygon2D" parent="InvertedAttempt/Fish2"]
-position = Vector2(-123, -72)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("2_at62a")
-skeleton = NodePath("../Skeleton")
-polygon = PackedVector2Array(345.049, 2144.42, 404.917, 2157.25, 484.029, 2148.7, 558.865, 2112.35, 605.904, 2058.9, 625.147, 1977.65, 610.18, 1892.12, 582.384, 1821.56, 571.693, 1725.34, 603.766, 1646.23, 629.424, 1569.26, 652.943, 1483.73, 663.628, 1396.06, 685.01, 1291.29, 693.562, 1222.87, 695.701, 1137.35, 697.839, 1064.65, 712.806, 996.229, 725.635, 932.084, 759.845, 887.183, 819.714, 893.598, 894.549, 872.216, 950.141, 827.315, 954.418, 769.584, 928.76, 722.545, 886.002, 643.438, 815.442, 585.708, 761.988, 553.635, 740.607, 487.353, 723.502, 393.274, 714.949, 318.438, 708.534, 264.984, 689.291, 194.425, 633.699, 126.004, 601.631, 25.5132, 541.763, -17.25, 447.684, -21.5263, 368.572, 23.375, 323.671, 106.763, 283.046, 194.428, 250.973, 290.645, 231.73, 399.691, 218.901, 491.632, 195.381, 570.744, 126.96, 634.888, 73.5101, 728.964, 64.9575, 805.937, 94.8917, 863.667, 163.313, 870.082, 246.701, 893.602, 265.944, 957.746, 265.944, 1045.41, 283.05, 1143.77, 304.431, 1235.71, 319.398, 1323.37, 347.194, 1411.04, 377.129, 1528.64, 409.201, 1635.54, 422.03, 1727.49, 443.412, 1819.43, 430.583, 1889.99, 400.648, 1969.1, 374.99, 2050.35)
-uv = PackedVector2Array(345.049, 2144.42, 404.917, 2157.25, 484.029, 2148.7, 558.865, 2112.35, 605.904, 2058.9, 625.147, 1977.65, 610.18, 1892.12, 582.384, 1821.56, 571.693, 1725.34, 603.766, 1646.23, 629.424, 1569.26, 652.943, 1483.73, 663.628, 1396.06, 685.01, 1291.29, 693.562, 1222.87, 695.701, 1137.35, 697.839, 1064.65, 712.806, 996.229, 725.635, 932.084, 759.845, 887.183, 819.714, 893.598, 894.549, 872.216, 950.141, 827.315, 954.418, 769.584, 928.76, 722.545, 886.002, 643.438, 815.442, 585.708, 761.988, 553.635, 740.607, 487.353, 723.502, 393.274, 714.949, 318.438, 708.534, 264.984, 689.291, 194.425, 633.699, 126.004, 601.631, 25.5132, 541.763, -17.25, 447.684, -21.5263, 368.572, 23.375, 323.671, 106.763, 283.046, 194.428, 250.973, 290.645, 231.73, 399.691, 218.901, 491.632, 195.381, 570.744, 126.96, 634.888, 73.5101, 728.964, 64.9575, 805.937, 94.8917, 863.667, 163.313, 870.082, 246.701, 893.602, 265.944, 957.746, 265.944, 1045.41, 283.05, 1143.77, 304.431, 1235.71, 319.398, 1323.37, 347.194, 1411.04, 377.129, 1528.64, 409.201, 1635.54, 422.03, 1727.49, 443.412, 1819.43, 430.583, 1889.99, 400.648, 1969.1, 374.99, 2050.35)
-bones = ["Bone0", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.22, 0.22, 0.22, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.51, 0.22, 0.22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone0/Bone1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0.63, 0.34, 0.54, 0.54, 0, 0, 0, 0, 0, 0, 0.54, 0.54, 0.63, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone0/Bone1/Bone2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.13, 0.13, 0.13, 0.13, 0.13, 0.13, 1, 1, 1, 1, 0.31, 0.31, 0.31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.31, 0.31, 0.31, 1, 1, 1, 0.13, 0.13, 0.13, 0.13, 0.13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone0/Bone1/Bone2/Bone3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.31, 0.31, 1, 1, 1, 1, 1, 1, 0.31, 0.31, 0.31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.31, 0.31, 1, 1, 1, 1, 1, 0.31, 0.31, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone0/Bone1/Bone2/Bone3/Bone4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.25, 0.25, 0.5, 0.5, 1, 1, 1, 0.5, 0.5, 0.5, 0.25, 0.25, 0.25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.25, 0.25, 0.5, 0.5, 1, 1, 1, 0.5, 0.5, 0.25, 0, 0, 0, 0, 0, 0, 0, 0), "Bone0/Bone1/Bone2/Bone3/Bone4/Bone5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.17, 0.52, 0.52, 1, 1, 1, 0.39, 0.39, 0.39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.39, 0.39, 0.39, 1, 1, 1, 0.52, 0.52, 0.17, 0, 0, 0, 0, 0, 0), "Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.32, 0.32, 0.32, 1, 1, 1, 0.25, 0.25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.25, 0.25, 1, 1, 1, 0.32, 0.32, 0, 0, 0, 0, 0), "Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6/Bone7", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0.27, 0.27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.27, 0.27, 0.27, 1, 1, 0, 0, 0, 0, 0), "Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6/Bone7/Bone8", PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.44, 0.44, 0.44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.44, 0.44, 1, 1, 1, 1, 1, 1)]
-
-[node name="Skeleton" type="Skeleton2D" parent="InvertedAttempt/Fish2"]
-z_index = 3
-
-[node name="Bone0" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton"]
-position = Vector2(349.918, 486.887)
-rotation = 1.52202
-rest = Transform2D(-3.61999e-06, -1, 1, -3.61999e-06, 0, 0)
-
-[node name="Bone1" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0"]
-position = Vector2(-29.6957, -4.26208)
-rotation = 0.585604
-scale = Vector2(1, 1)
-rest = Transform2D(1, 0, 0, 1, -45, 0)
-
-[node name="Bone2" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0/Bone1"]
-position = Vector2(-49.2981, -8.34894)
-rotation = 0.625091
-rest = Transform2D(1, 0, 0, 1, -34, 0)
-
-[node name="Bone3" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0/Bone1/Bone2"]
-position = Vector2(-53.7746, -11.5452)
-rotation = 0.61945
-rest = Transform2D(1, 0, 0, 1, -35, 0)
-
-[node name="Bone4" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0/Bone1/Bone2/Bone3"]
-position = Vector2(-48.9169, -10.3506)
-rotation = 0.538701
-rest = Transform2D(1, 0, 0, 1, -35, 2)
-
-[node name="Bone5" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4"]
-position = Vector2(-39.4863, -6.38953)
-rotation = 0.455189
-rest = Transform2D(1, 0, 0, 1, -41, 0)
-
-[node name="Bone6" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4/Bone5"]
-position = Vector2(-34.8642, -3.08084)
-rotation = 0.410955
-scale = Vector2(1, 1)
-rest = Transform2D(1, 0, 0, 1, -50, 0)
-
-[node name="Bone7" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6"]
-position = Vector2(-34.9809, -1.15576)
-rotation = 0.428993
-rest = Transform2D(1, 0, 0, 1, -54, 0)
-
-[node name="Bone8" type="Bone2D" parent="InvertedAttempt/Fish2/Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6/Bone7"]
-position = Vector2(-34.9995, -0.190491)
-rotation = 0.489912
-rest = Transform2D(1, 0, 0, 1, -50, 0)
-auto_calculate_length_and_angle = false
-length = 30.0
-bone_angle = 0.0
-
-[node name="FishContainer" type="Node2D" parent="InvertedAttempt/Fish2"]
-script = ExtResource("2_kjgfh")
-
-[node name="Segment0" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(349.918, 486.887)
-rotation = -11.0444
-script = ExtResource("3_jhsbd")
-radius = 30
-owned_bone = NodePath("../../Skeleton/Bone0")
-
-[node name="Segment1" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(352.727, 457.019)
-rotation = -10.4588
-script = ExtResource("3_jhsbd")
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1")
-
-[node name="Segment2" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(385.113, 418.925)
-rotation = -9.83366
-script = ExtResource("3_jhsbd")
-radius = 55
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1/Bone2")
-
-[node name="Segment3" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(439.045, 408.138)
-rotation = -9.21421
-script = ExtResource("3_jhsbd")
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1/Bone2/Bone3")
-
-[node name="Segment4" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(484.718, 428.485)
-rotation = -8.67551
-script = ExtResource("3_jhsbd")
-radius = 40
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4")
-
-[node name="Segment5" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(509.277, 460.057)
-rotation = -8.22032
-script = ExtResource("3_jhsbd")
-radius = 35
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4/Bone5")
-
-[node name="Segment6" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(518.889, 493.712)
-rotation = -7.80937
-script = ExtResource("3_jhsbd")
-radius = 35
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6")
-
-[node name="Segment7" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(516.174, 528.606)
-rotation = -7.38037
-script = ExtResource("3_jhsbd")
-radius = 35
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6/Bone7")
-
-[node name="Segment9" type="Sprite2D" parent="InvertedAttempt/Fish2/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(500.042, 559.666)
-rotation = -6.89046
-script = ExtResource("3_jhsbd")
-radius = 45
-owned_bone = NodePath("../../Skeleton/Bone0/Bone1/Bone2/Bone3/Bone4/Bone5/Bone6/Bone7/Bone8")
