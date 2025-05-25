@@ -1,11 +1,13 @@
-
+@tool
 extends Node2D
 
 var speed = 250
-const TURN_SPEED = 3.5
+const TURN_SPEED = 3.25
 var current_turn_speed = 0
 
 var current_speed = 0
+
+var angle_limit := 110.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -46,13 +48,13 @@ func _physics_process(delta: float) -> void:
 			var segment_pos = segment.global_position
 			var point_distance = prev_pos.distance_to(segment_pos)
 			if (point_distance == 0):
-				return
+				continue
 			var direction_angle = (segment_pos - prev_pos).angle()
 			var back_angle = previous_segment.rotation + deg_to_rad(180)
 			var mid_angle = lerp_angle(direction_angle, back_angle, 10 * delta)
 			if (previous_previous_segment != null):
 				var angle = rad_to_deg(get_angle_between_vectors(previous_segment.global_position, segment.global_position, previous_previous_segment.global_position))
-				if (angle < 95 and angle > -95):
+				if (angle < angle_limit and angle > -angle_limit):
 					previous_previous_segment.rotate(-segment.recently_rotated)
 			var target_position = prev_pos + Vector2(
 				previous_segment.radius * cos(mid_angle),
@@ -61,6 +63,18 @@ func _physics_process(delta: float) -> void:
 			segment.global_position = segment_pos.move_toward(target_position, speed * 10 * delta)
 			previous_previous_segment = previous_segment
 			previous_segment = segment
+	
+	var segments = []
+	
+	for segment : Node2D in get_children():
+		segments.append(segment)
+	
+	segments.reverse()
+	
+	for segment in segments:
+		if segment.owned_bone:
+			segment.owned_bone.global_position = segment.global_position
+			segment.owned_bone.global_rotation_degrees = segment.global_rotation_degrees + 90
 
 func get_angle_between_vectors(center: Vector2, a: Vector2, b: Vector2) -> float:
 	var dir_a = a - center
