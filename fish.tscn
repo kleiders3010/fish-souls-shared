@@ -1,0 +1,97 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca37arklhb61q"]
+
+[sub_resource type="SkeletonModification2DCCDIK" id="SkeletonModification2DCCDIK_ng3n0"]
+target_nodepath = NodePath("../../Target")
+tip_nodepath = NodePath("Bone2D/Bone2D/Bone2D/Bone2D/Body/Body/Head/Tip")
+ccdik_data_chain_length = 4
+joint_data/0/bone_index = 0
+joint_data/0/bone2d_node = NodePath("Bone2D")
+joint_data/0/rotate_from_joint = false
+joint_data/0/enable_constraint = false
+joint_data/0/editor_draw_gizmo = true
+joint_data/1/bone_index = 2
+joint_data/1/bone2d_node = NodePath("Bone2D/Bone2D/Bone2D")
+joint_data/1/rotate_from_joint = false
+joint_data/1/enable_constraint = true
+joint_data/1/constraint_angle_min = -90.0
+joint_data/1/constraint_angle_max = 90.0
+joint_data/1/constraint_angle_invert = true
+joint_data/1/constraint_in_localspace = true
+joint_data/1/editor_draw_gizmo = true
+joint_data/2/bone_index = 4
+joint_data/2/bone2d_node = NodePath("Bone2D/Bone2D/Bone2D/Bone2D/Body")
+joint_data/2/rotate_from_joint = false
+joint_data/2/enable_constraint = true
+joint_data/2/constraint_angle_min = -90.0
+joint_data/2/constraint_angle_max = 90.0
+joint_data/2/constraint_angle_invert = true
+joint_data/2/constraint_in_localspace = true
+joint_data/2/editor_draw_gizmo = true
+joint_data/3/bone_index = 6
+joint_data/3/bone2d_node = NodePath("Bone2D/Bone2D/Bone2D/Bone2D/Body/Body/Head")
+joint_data/3/rotate_from_joint = false
+joint_data/3/enable_constraint = true
+joint_data/3/constraint_angle_min = -70.0
+joint_data/3/constraint_angle_max = 70.0
+joint_data/3/constraint_angle_invert = true
+joint_data/3/constraint_in_localspace = true
+joint_data/3/editor_draw_gizmo = true
+
+[sub_resource type="SkeletonModificationStack2D" id="SkeletonModificationStack2D_xu20i"]
+enabled = true
+modification_count = 1
+modifications/0 = SubResource("SkeletonModification2DCCDIK_ng3n0")
+
+[node name="Fish" type="Node2D"]
+visible = false
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+skeleton = NodePath("../Skeleton2D")
+polygon = PackedVector2Array(0, 104, 9, 103, 19, 98, 26, 90, 30, 78, 33, 63, 32, 44, 31, 28, 26, 11, 23, -11, 17, -34, 7, -49, 2, -65, 0, -84, -2, -64, -6, -48, -8, -32, -10, -8, -17, 12, -24, 30, -26, 46, -29, 64, -27, 81, -22, 92, -14, 99, -7, 103)
+uv = PackedVector2Array(0, 104, 9, 103, 19, 98, 26, 90, 30, 78, 33, 63, 32, 44, 31, 28, 26, 11, 23, -11, 17, -34, 7, -49, 2, -65, 0, -84, -2, -64, -6, -48, -8, -32, -10, -8, -17, 12, -24, 30, -26, 46, -29, 64, -27, 81, -22, 92, -14, 99, -7, 103)
+bones = ["Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.49, 1, 1, 1, 1, 1, 0.49, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0.62, 1, 0.62, 0, 0, 0, 0.62, 1, 0.62, 0, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0.62, 1, 0.62, 0, 0, 0, 0, 0, 0.62, 1, 0.62, 0, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0.56, 1, 0.72, 0, 0, 0, 0, 0, 0, 0, 0.56, 1, 0.56, 0, 0, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Body", PackedFloat32Array(0, 0, 0, 0, 0, 0.41, 0.8, 0.95, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.68, 0.95, 0.78, 0.41, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Body/Body", PackedFloat32Array(0, 0, 0, 0, 0, 0.78, 0.78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.78, 0.78, 0, 0, 0, 0), "Bone2D/Bone2D/Bone2D/Bone2D/Body/Body/Head", PackedFloat32Array(1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1)]
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+position = Vector2(0, -1)
+modification_stack = SubResource("SkeletonModificationStack2D_xu20i")
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D"]
+rotation = -0.19177
+scale = Vector2(0.99994, 0.99994)
+rest = Transform2D(1, 0, 0, 1, 0, -50)
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D"]
+position = Vector2(0, 14)
+rest = Transform2D(1, 0, 0, 1, 0, 14)
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D"]
+position = Vector2(0.999847, 20.0013)
+rotation = 0.0211155
+scale = Vector2(1.00001, 1.00001)
+rest = Transform2D(1, 0, 0, 1, 1, 20)
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D"]
+position = Vector2(0, 16)
+rest = Transform2D(1, 0, 0, 1, 0, 16)
+
+[node name="Body" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D"]
+position = Vector2(1.99927, 21.0012)
+rotation = -0.0972856
+scale = Vector2(0.999994, 0.999994)
+rest = Transform2D(1, 0, 0, 1, 2, 21)
+
+[node name="Body" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Body"]
+position = Vector2(-1, 24)
+rest = Transform2D(1, 0, 0, 1, -1, 24)
+
+[node name="Head" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Body/Body"]
+position = Vector2(-0.998871, 21.9991)
+rotation = 0.0111926
+scale = Vector2(0.99989, 0.99989)
+rest = Transform2D(1, 0, 0, 1, -1, 22)
+auto_calculate_length_and_angle = false
+length = 20.0
+bone_angle = 90.0
+
+[node name="Tip" type="Node2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Body/Body/Head"]
+position = Vector2(-1, 31)

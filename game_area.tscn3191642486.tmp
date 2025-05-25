@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnmc5vuyx0cve"]
+
+[ext_resource type="Texture2D" uid="uid://ck15wadj23eqc" path="res://icon.svg" id="1_c5ty0"]
+[ext_resource type="Script" uid="uid://req3angkfrg0" path="res://fish_controller.gd" id="2_kjgfh"]
+
+[node name="GameArea" type="Node2D"]
+
+[node name="FishContainer" type="Node2D" parent="."]
+position = Vector2(314, 154)
+scale = Vector2(0.5, 0.5)
+
+[node name="Anchor" type="Sprite2D" parent="FishContainer"]
+texture = ExtResource("1_c5ty0")
+script = ExtResource("2_kjgfh")
+
+[node name="Segment1" type="Sprite2D" parent="FishContainer"]
+texture = ExtResource("1_c5ty0")

@@ -1,0 +1,233 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnmc5vuyx0cve"]
+
+[ext_resource type="Texture2D" uid="uid://ck15wadj23eqc" path="res://icon.svg" id="1_c5ty0"]
+[ext_resource type="Script" uid="uid://req3angkfrg0" path="res://fish_controller.gd" id="2_kjgfh"]
+[ext_resource type="Script" uid="uid://deqgwoelxkv15" path="res://segment.gd" id="3_jhsbd"]
+
+[node name="GameArea" type="Node2D"]
+
+[node name="FishContainer" type="Node2D" parent="."]
+position = Vector2(314, 154)
+script = ExtResource("2_kjgfh")
+
+[node name="Anchor" type="Sprite2D" parent="FishContainer"]
+visible = false
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 40
+left_points = Array[int]([0, -45, -90])
+right_points = Array[int]([0, 45, 90])
+
+[node name="Segment1" type="Sprite2D" parent="FishContainer"]
+visible = false
+position = Vector2(-158, 31)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+
+[node name="Segment2" type="Sprite2D" parent="FishContainer"]
+visible = false
+position = Vector2(-325, -7)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 40
+
+[node name="Segment3" type="Sprite2D" parent="FishContainer"]
+visible = false
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 32
+
+[node name="Segment4" type="Sprite2D" parent="FishContainer"]
+visible = false
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 24
+
+[node name="Segment7" type="Sprite2D" parent="FishContainer"]
+visible = false
+position = Vector2(-325, -7)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 40
+
+[node name="Segment10" type="Sprite2D" parent="FishContainer"]
+visible = false
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 16
+left_points = Array[int]([-90, 180])
+
+[node name="ProceduralJail" type="Node" parent="."]
+
+[node name="FishWeird" type="Node" parent="ProceduralJail"]
+
+[node name="Anchor" type="Sprite2D" parent="ProceduralJail/FishWeird"]
+visible = false
+position = Vector2(314, 154)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 40
+left_points = Array[int]([0, -45, -90])
+right_points = Array[int]([0, 45, 90])
+
+[node name="Segment8" type="Sprite2D" parent="ProceduralJail/FishWeird"]
+visible = false
+position = Vector2(314, 154)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 32
+
+[node name="Segment9" type="Sprite2D" parent="ProceduralJail/FishWeird"]
+visible = false
+position = Vector2(314, 154)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 24
+
+[node name="Segment10" type="Sprite2D" parent="ProceduralJail/FishWeird"]
+visible = false
+position = Vector2(314, 154)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 16
+left_points = Array[int]([-90, 180])
+right_points = Array[int]([90, 180])
+
+[node name="Snake" type="Node" parent="ProceduralJail"]
+
+[node name="Anchor" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(314, 154)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+left_points = Array[int]([0, -45, -90])
+right_points = Array[int]([0, 45, 90])
+
+[node name="Segment5" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 25
+
+[node name="Segment6" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment7" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment8" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment9" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment10" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment11" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment12" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment13" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment16" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment17" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment18" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment19" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment20" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment21" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment22" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment23" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(156, 185)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 20
+
+[node name="Segment14" type="Sprite2D" parent="ProceduralJail/Snake"]
+visible = false
+position = Vector2(314, 154)
+texture = ExtResource("1_c5ty0")
+script = ExtResource("3_jhsbd")
+radius = 16
+left_points = Array[int]([-90, 180])
+right_points = Array[int]([90, 180])
