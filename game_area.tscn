@@ -85,30 +85,30 @@ scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(1, -0.000300405, 0.000300405, 1, -0.0104024, -35.0002)
 
 [node name="Bone2" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3"]
-position = Vector2(-8.18176, -39.1544)
+position = Vector2(-8.18176, -39.1545)
 rotation = -0.205994
 rest = Transform2D(1, -0.000799214, 0.000799214, 1, -0.0307144, -40.0002)
 
 [node name="Bone1" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2"]
-position = Vector2(-8.55798, -49.2623)
+position = Vector2(-8.55804, -49.2623)
 rotation = -0.172005
 scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(0.999999, -0.00170043, 0.00170043, 0.999999, -0.087007, -49.9999)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1"]
-position = Vector2(-5.65503, -54.7088)
+position = Vector2(-5.65497, -54.7087)
 rotation = -0.102997
 scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(0.999992, -0.00409979, 0.00409979, 0.999992, -0.225713, -54.9989)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0"]
-position = Vector2(-2.09943, -49.9562)
-rotation = -0.0419998
+position = Vector2(-2.09949, -49.9563)
+rotation = -0.0419999
 rest = Transform2D(0.999961, -0.00880044, 0.00880044, 0.999961, -0.438503, -49.9987)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0/Bone0"]
-position = Vector2(-0.264343, -29.9991)
-rotation = -0.00881441
+position = Vector2(-0.264221, -29.999)
+rotation = -0.00881435
 scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(0.999875, -0.0158138, 0.0158138, 0.999875, -0.474254, -29.9958)
 auto_calculate_length_and_angle = false
@@ -139,7 +139,6 @@ rotation = 105.607
 script = ExtResource("3_jhsbd")
 radius = 30
 owned_bone = NodePath("../../Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0/Bone0/Bone0")
-deg_offset = 180.0
 
 [node name="Segment1" type="Sprite2D" parent="Fish/FishContainer" node_paths=PackedStringArray("owned_bone")]
 position = Vector2(824.363, 94.0769)

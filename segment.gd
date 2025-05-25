@@ -3,7 +3,6 @@ extends Sprite2D
 class_name ProceduralSegment
 @export var radius = 50
 @export var owned_bone : Bone2D
-@export var deg_offset := 0.0
 
 var recently_rotated = 0.0
 
