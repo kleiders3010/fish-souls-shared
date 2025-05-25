@@ -14,12 +14,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	queue_redraw()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _physics_process(delta: float) -> void:
-	#if owned_bone:
-		#owned_bone.global_position = global_position
-		#owned_bone.global_rotation_degrees = global_rotation_degrees + 90
-
 func _draw() -> void:
 	draw_circle(to_local(global_position), 5, Color(0, 0, 1))
 	draw_circle(to_local(global_position), radius, Color(0, 0, 1), false)

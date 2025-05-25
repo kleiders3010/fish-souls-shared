@@ -29,7 +29,6 @@ func _physics_process(delta: float) -> void:
 			var target_angle = ($"../../Target".global_position - segment.global_position).angle()
 			var current_angle = segment.rotation
 			var new_angle = lerp_angle(current_angle, target_angle, current_turn_speed * delta)
-			#if :
 			if (Engine.is_editor_hint() and segment.global_position.distance_to($"../../Target".global_position) > 100) or (!Engine.is_editor_hint() and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT)):
 				current_speed = move_toward(current_speed, speed, (speed * 0.5) * delta)
 				segment.recently_rotated = new_angle - current_angle

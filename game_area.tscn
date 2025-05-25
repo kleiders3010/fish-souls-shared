@@ -47,47 +47,46 @@ bones = ["Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 position = Vector2(0, 680)
 
 [node name="Bone9" type="Bone2D" parent="Fish/Skeleton"]
-position = Vector2(613.734, -128.752)
+position = Vector2(613.734, -128.751)
 rotation = -0.716542
 rest = Transform2D(0.999879, 0.015525, -0.015525, 0.999879, 0.00969982, -256.519)
 
 [node name="Bone8" type="Bone2D" parent="Fish/Skeleton/Bone9"]
-position = Vector2(22.1164, -27.1267)
+position = Vector2(22.1167, -27.1266)
 rotation = 0.684006
 rest = Transform2D(0.999985, -0.0054998, 0.0054998, 0.999985, -0.194099, -35.0002)
 
 [node name="Bone7" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8"]
-position = Vector2(19.2686, -29.2186)
+position = Vector2(19.2685, -29.2185)
 rotation = 0.583
 scale = Vector2(1, 1)
 rest = Transform2D(0.999994, -0.00360019, 0.00360019, 0.999994, -0.124897, -34.9995)
 
 [node name="Bone6" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7"]
-position = Vector2(13.0472, -32.4772)
+position = Vector2(13.0471, -32.4772)
 rotation = 0.381996
 rest = Transform2D(0.999998, -0.00179963, 0.00179963, 0.999998, -0.0630953, -35.0003)
 
 [node name="Bone5" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6"]
-position = Vector2(5.47241, -34.5695)
-rotation = 0.156997
+position = Vector2(5.47235, -34.5696)
+rotation = 0.156998
 rest = Transform2D(1, -0.00069988, 0.00069988, 1, -0.0247039, -34.9993)
 
 [node name="Bone4" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5"]
 position = Vector2(-1.11975, -34.9821)
-rotation = -0.0319976
+rotation = -0.0319977
 scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(1, -0.00020027, 0.00020027, 1, -0.00741172, -35.0002)
 
 [node name="Bone3" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4"]
-position = Vector2(-5.64526, -34.5418)
+position = Vector2(-5.64532, -34.5417)
 rotation = -0.162003
 scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(1, -0.000300405, 0.000300405, 1, -0.0104024, -35.0002)
 
 [node name="Bone2" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3"]
-position = Vector2(-8.18164, -39.1544)
+position = Vector2(-8.18176, -39.1544)
 rotation = -0.205994
-scale = Vector2(1, 1)
 rest = Transform2D(1, -0.000799214, 0.000799214, 1, -0.0307144, -40.0002)
 
 [node name="Bone1" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2"]
@@ -97,19 +96,19 @@ scale = Vector2(0.999999, 0.999999)
 rest = Transform2D(0.999999, -0.00170043, 0.00170043, 0.999999, -0.087007, -49.9999)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1"]
-position = Vector2(-5.65503, -54.7087)
+position = Vector2(-5.65503, -54.7088)
 rotation = -0.102997
 scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(0.999992, -0.00409979, 0.00409979, 0.999992, -0.225713, -54.9989)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0"]
-position = Vector2(-2.09961, -49.9563)
+position = Vector2(-2.09943, -49.9562)
 rotation = -0.0419998
 rest = Transform2D(0.999961, -0.00880044, 0.00880044, 0.999961, -0.438503, -49.9987)
 
 [node name="Bone0" type="Bone2D" parent="Fish/Skeleton/Bone9/Bone8/Bone7/Bone6/Bone5/Bone4/Bone3/Bone2/Bone1/Bone0/Bone0"]
-position = Vector2(-0.26416, -29.999)
-rotation = -0.00881438
+position = Vector2(-0.264343, -29.9991)
+rotation = -0.00881441
 scale = Vector2(0.999998, 0.999998)
 rest = Transform2D(0.999875, -0.0158138, 0.0158138, 0.999875, -0.474254, -29.9958)
 auto_calculate_length_and_angle = false
@@ -211,7 +210,7 @@ radius = 35
 owned_bone = NodePath("../../Skeleton/Bone9/Bone8")
 
 [node name="Segment11" type="Sprite2D" parent="Fish/FishContainer" node_paths=PackedStringArray("owned_bone")]
-position = Vector2(599.734, 406.248)
+position = Vector2(599.734, 406.249)
 rotation = 110.81
 script = ExtResource("3_jhsbd")
 radius = 45
